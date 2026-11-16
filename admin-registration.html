@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoodieRest | Admin Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+    <div class="auth-page">
+
+        <!-- Left Side -->
+        <section class="auth-left">
+
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Logo">
+                <strong>Foodie<span>Rest</span></strong>
+            </a>
+
+            <h1>Join<br>FoodieRest</h1>
+
+            <p>Create an admin account to manage the restaurant</p>
+
+            <ul class="feature-list">
+                <li>🥗 Fresh Ingredients</li>
+                <li>⚡ Fast Service</li>
+                <li>😋 Great Taste</li>
+            </ul>
+
+        </section>
+
+        <!-- Right Side -->
+        <section class="auth-right">
+
+            <div class="auth-card">
+
+                <span class="role-pill">Admin</span>
+
+                <h2>Admin Registration</h2>
+
+                <p class="sub">Fill in the form to create your account</p>
+
+                <form onsubmit="return validateRegister('admin')">
+
+                    <p id="formMessage" class="form-message"></p>
+
+                    <!-- Personal Information -->
+                    <fieldset>
+
+                        <legend>Personal Information</legend>
+
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="fullName" placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" id="email" placeholder="Enter your email">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" id="phone" placeholder="01XXXXXXXXX">
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>Gender</label>
+
+                            <div class="option-group">
+
+                                <label>
+                                    <input type="radio" name="gender" value="Male" checked>
+                                    Male
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="gender" value="Female">
+                                    Female
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="gender" value="Other">
+                                    Other
+                                </label>
+
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <!-- Account Information -->
+                    <fieldset>
+
+                        <legend>Account Information</legend>
+
+                        <div class="form-group">
+                            <label>Admin Secret Code</label>
+                            <input type="password" id="adminCode" placeholder="Enter admin code">
+
+                            <p class="hint">
+                                Only the restaurant owner can give this code.
+                            </p>
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" id="password" placeholder="Min 6 characters">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Confirm Password</label>
+                                <input type="password" id="confirmPassword" placeholder="Type again">
+                            </div>
+
+                        </div>
+
+                        <label class="check-label">
+                            <input type="checkbox" id="agree">
+                            I agree to the terms and conditions
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Buttons -->
+                    <div class="form-buttons">
+
+                        <input type="submit" value="Register" class="btn btn-primary">
+
+                        <input type="reset" value="Reset" class="btn btn-outline">
+
+                    </div>
+
+                </form>
+
+                <p class="auth-switch">
+                    Already have an account?
+                    <a href="admin-login.html">Login here</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+</html>

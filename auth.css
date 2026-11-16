@@ -116,3 +116,131 @@
     font-size: 14px;
     color: #6B7280;
 }
+
+
+
+/* Admin Registration Page */
+
+.auth-page {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Side */
+
+.auth-left {
+    width: 53%;
+    flex: none;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: #642A13;
+}
+
+.auth-left .logo {
+    margin-bottom: 40px;
+}
+
+.auth-left h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.auth-left p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Feature List */
+
+.feature-list {
+    list-style: none;
+}
+
+.feature-list li {
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+/* Right Side */
+
+.auth-right {
+    width: 47%;
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* Registration Box */
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+    background-color: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.auth-card .sub {
+    color: #6B7280;
+    margin-bottom: 22px;
+}
+
+/* Admin Label */
+
+.role-pill {
+    display: inline-block;
+    padding: 3px 12px;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    background-color: #FFF1EB;
+    color: #F4511E;
+    font-size: 13px;
+}
+
+/* Login Link */
+
+.auth-switch {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.auth-switch a {
+    color: #F4511E;
+    font-weight: bold;
+}
+
+/* Registration Page Responsive */
+
+@media (max-width: 768px) {
+
+    .auth-page {
+        flex-direction: column;
+    }
+
+    .auth-left,
+    .auth-right {
+        width: 100%;
+    }
+
+    .auth-left {
+        padding: 30px;
+    }
+
+    .auth-card {
+        padding: 28px;
+    }
+
+}
