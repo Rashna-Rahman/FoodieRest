@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoodieRest | Admin Login</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+    <div class="auth-page">
+
+        <!-- Left Side -->
+        <section class="auth-left">
+
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Logo">
+                <strong>Foodie<span>Rest</span></strong>
+            </a>
+
+            <h1>Welcome Back!</h1>
+            <p>Login to continue</p>
+
+            <ul class="feature-list">
+                <li>🥗 Fresh Ingredients</li>
+                <li>⚡ Fast Service</li>
+                <li>😋 Great Taste</li>
+            </ul>
+
+        </section>
+
+        <!-- Right Side -->
+        <section class="auth-right">
+
+            <div class="auth-card">
+
+                <span class="role-pill">Admin</span>
+
+                <h2>Admin Login</h2>
+                <p class="sub">Login to manage the menu and orders</p>
+
+                <form onsubmit="return validateLogin('admin')">
+
+                    <p id="formMessage" class="form-message"></p>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="password" placeholder="Enter your password">
+                    </div>
+
+                    <div class="remember-row">
+
+                        <label class="check-label">
+                            <input type="checkbox" id="remember">
+                            Remember me
+                        </label>
+
+                        <a href="forgot-password.html">Forgot password?</a>
+
+                    </div>
+
+                    <input type="submit" value="Login" class="btn btn-primary btn-block">
+
+                </form>
+
+                <p class="auth-switch">
+                    Don't have an account?
+                    <a href="admin-register.html">Register here</a>
+                </p>
+
+                <p class="demo-hint">
+                    Demo account: admin@foodierest.com / admin123
+                </p>
+
+                <p class="auth-switch">
+                    <a href="role.html">Change role</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+</html>
