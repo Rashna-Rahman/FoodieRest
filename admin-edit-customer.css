@@ -1,0 +1,205 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F7;
+    color: #222;
+}
+
+/* Main Layout */
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background-color: #1E2A3D;
+    color: white;
+    min-height: 100vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.logo span {
+    color: #F4511E;
+}
+
+.side-menu a {
+    display: block;
+    padding: 14px 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.side-menu a:hover,
+.side-menu .active {
+    background-color: #34445A;
+    border-left: 4px solid #F4511E;
+}
+
+.side-menu .logout {
+    color: #FF725E;
+    margin-top: 20px;
+}
+
+/* Main Content */
+.admin-main {
+    flex: 1;
+    padding: 30px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.topbar h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.topbar p {
+    color: #777;
+    font-size: 14px;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    background-color: #FFF0E9;
+    color: #F4511E;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+/* Form Box */
+.form-box {
+    background-color: white;
+    width: 620px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #E5E7EB;
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+legend {
+    color: #F4511E;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[readonly] {
+    background-color: #F5F5F5;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+}
+
+.form-row .form-group {
+    width: 50%;
+}
+
+.hint {
+    color: #888;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Buttons */
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.btn,
+.cancel {
+    width: 50%;
+    padding: 13px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #F4511E;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #D84315;
+}
+
+.cancel {
+    background-color: white;
+    border: 1px solid #DDD;
+    color: #222;
+}
+
+.cancel:hover {
+    background-color: #F5F5F5;
+}
