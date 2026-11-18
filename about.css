@@ -1,0 +1,230 @@
+
+/* Basic CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #2D2D2D;
+    background-color: #F6F6F7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Container */
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1E293B;
+}
+
+.logo img {
+    width: 38px;
+    height: 38px;
+}
+
+.logo span {
+    color: #F4511E;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 6px gray;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-links a {
+    padding: 8px 14px;
+    color: #6B7280;
+    border-radius: 6px;
+}
+
+.nav-links a:hover {
+    color: #F4511E;
+}
+
+.nav-links .active {
+    color: #F4511E;
+    background-color: #FFF1EB;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #F4511E;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #D84315;
+}
+
+.btn-small {
+    padding: 6px 14px;
+    font-size: 13px;
+}
+
+/* Login Button */
+
+.nav-links .btn-primary {
+    color: white;
+}
+
+/* Page Title */
+
+.page-title {
+    font-size: 26px;
+    margin: 30px 0 20px;
+}
+
+/* White Box */
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 1px 4px gray;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #1E293B;
+    color: #CBD5E1;
+    text-align: center;
+    padding: 22px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Image and Text */
+
+.about-grid {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-grid img {
+    width: 50%;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.about-text p {
+    color: #6B7280;
+    margin-bottom: 12px;
+}
+
+/* Services */
+
+.section {
+    margin-top: 40px;
+}
+
+.why-grid {
+    display: flex;
+}
+
+.why-item {
+    width: 33.33%;
+    background-color: white;
+    padding: 26px;
+    margin: 10px;
+    border-radius: 10px;
+    border-top: 4px solid #F4511E;
+}
+
+.why-icon {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.why-item h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.why-item p {
+    color: #6B7280;
+    font-size: 14px;
+}
