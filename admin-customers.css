@@ -1,0 +1,147 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+}
+
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #1E293B;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.logo span {
+    color: #FF4B1F;
+}
+
+.side-menu a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.side-menu a:hover,
+.side-menu .active {
+    background-color: #334155;
+    border-left: 4px solid #FF4B1F;
+}
+
+.logout {
+    margin-top: 20px;
+}
+
+/* Main Content */
+.admin-main {
+    flex: 1;
+    padding: 28px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 25px;
+    color: #222;
+}
+
+.topbar p {
+    color: #777;
+    margin-top: 8px;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    background-color: #FFF0E8;
+    color: #FF4B1F;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+/* Customer Table */
+.table-wrap {
+    background-color: white;
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 2px 5px #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+th {
+    background-color: #F8F9FA;
+    color: #555;
+    text-align: left;
+}
+
+th, td {
+    padding: 16px 14px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+td {
+    color: #333;
+}
+
+tr:hover {
+    background-color: #FFF8F5;
+}
+
+/* Action Buttons */
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background-color: #2864E8;
+}
+
+.delete-btn {
+    background-color: #E52525;
+}

@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoodieRest | Customers</title>
+    <link rel="stylesheet" href="admin-customers.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <a href="admin-dashboard.html" class="logo">
+                <img src="images/logo.svg" alt="Logo">
+                <strong>Foodie<span>Rest</span></strong>
+            </a>
+
+            <div class="side-menu">
+                <a href="admin-dashboard.html">🏠 Dashboard</a>
+                <a href="admin-menu.html">🍽️ Manage Menu</a>
+                <a href="admin-orders.html">🧾 All Orders</a>
+                <a href="admin-customers.html" class="active">👥 Customers</a>
+                <a href="#" class="logout" onclick="logout(); return false;">🚪 Logout</a>
+            </div>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="admin-main">
+
+            <div class="topbar">
+                <div>
+                    <h1>Manage Customers</h1>
+                    <p>View, edit or delete customer accounts</p>
+                </div>
+
+                <div class="user-box">
+                    <span class="avatar" id="avatarLetter">A</span>
+                    <span id="userName">Hello</span>
+                </div>
+            </div>
+
+            <!-- Customer Table -->
+            <div class="table-wrap">
+
+                <table>
+                    <caption id="customerCaption">Registered Customers</caption>
+
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>Total Orders</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="customerRows">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/admin.js"></script>
+
+    <script>
+        loadCustomers();
+    </script>
+
+</body>
+</html>
