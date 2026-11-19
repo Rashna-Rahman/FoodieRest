@@ -145,3 +145,34 @@ button {
 .delete-btn {
     background-color: #E52525;
 }
+
+/* Action Buttons */
+.btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn-blue {
+    background-color: #2864E8;
+}
+
+.btn-red {
+    background-color: #E52525;
+}
+
+.btn-small {
+    padding: 5px 12px;
+    font-size: 13px;
+}
+
+.btn-blue:hover {
+    background-color: #174AC0;
+}
+
+.btn-red:hover {
+    background-color: #C41616;
+}
